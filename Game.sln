@@ -5,7 +5,9 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Game.WebAPI", "WebAPI\Game.WebAPI.csproj", "{77CACC6D-E667-41C2-B001-055EBEEB7506}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Data", "Game.Data\Game.Data.csproj", "{72AF69DC-EE73-44BE-BBEF-44FA79D41E4D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Game.Data", "Game.Data\Game.Data.csproj", "{72AF69DC-EE73-44BE-BBEF-44FA79D41E4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Services", "Game.Services\Game.Services.csproj", "{42202BCB-098B-4084-A6E5-1DEEE071B93E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{72AF69DC-EE73-44BE-BBEF-44FA79D41E4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72AF69DC-EE73-44BE-BBEF-44FA79D41E4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72AF69DC-EE73-44BE-BBEF-44FA79D41E4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42202BCB-098B-4084-A6E5-1DEEE071B93E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42202BCB-098B-4084-A6E5-1DEEE071B93E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42202BCB-098B-4084-A6E5-1DEEE071B93E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42202BCB-098B-4084-A6E5-1DEEE071B93E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

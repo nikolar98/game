@@ -1,4 +1,5 @@
 using Game.Data;
+using Game.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
@@ -14,8 +15,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<GameDbContext>(options => options.UseSqlServer("name=ConnectionStrings:GameDB"));
 
-builder.Services.AddTransient<IPlayerRepository, PlayerRepository>(); 
+builder.Services.AddTransient<IPlayerRepository, PlayerRepository>();
 
+builder.Services.AddTransient<IPlayerService, PlayerService>();
 
 var app = builder.Build();
 

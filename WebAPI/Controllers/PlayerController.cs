@@ -1,4 +1,5 @@
 ﻿using Game.Data;
+using Game.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -9,17 +10,17 @@ namespace Game.WebAPI.Controllers
     [ApiController]
     public class PlayerController : ControllerBase
     {
-        private readonly IPlayerRepository playerRepository;
+        private readonly IPlayerService playerService;
 
-        public PlayerController(IPlayerRepository playerRepository)
+        public PlayerController(IPlayerService playerService)
         {
-            this.playerRepository = playerRepository;
+            this.playerService = playerService;
         }
 
         [HttpGet()]
         public ActionResult<IEnumerable<Player>> GetAll()
         {
-            return Ok(playerRepository.GetAll());
+            return Ok(playerService.GetAll());
 
 
         }
