@@ -14,10 +14,14 @@ namespace Game.Data
     {
         public DbSet<Player> Players { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public GameDbContext(DbContextOptions<GameDbContext> options) : base(options)
         {
-            optionsBuilder.UseSqlServer(@"Server=localhost\SQLEXPRESS;Database=GameDB;Trusted_Connection=True;MultipleActiveResultSets=true");
         }
+
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseSqlServer(@"Server=localhost\SQLEXPRESS;Database=GameDB;Trusted_Connection=True;MultipleActiveResultSets=true");
+        //}
 
     }
 }
