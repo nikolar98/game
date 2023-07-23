@@ -14,12 +14,24 @@ namespace Game.Data
         {
             this.gameDbContext = gameDbContext;
         }
-        public IEnumerable<Player> GetAll() {
+        public IEnumerable<Player> GetAll()
+        {
 
             return gameDbContext.Players.ToList();
-        
-        
-        
+
+
+
         }
+
+        public void Insert(Player player)
+        {
+            gameDbContext.Players.Add(player);
+
+            gameDbContext.SaveChanges();
+        }
+
+
+
+
     }
 }

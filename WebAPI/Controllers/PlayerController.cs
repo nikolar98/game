@@ -17,11 +17,20 @@ namespace Game.WebAPI.Controllers
             this.playerService = playerService;
         }
 
-        [HttpGet()]
+        [HttpGet]
         public ActionResult<IEnumerable<Player>> GetAll()
         {
             return Ok(playerService.GetAll());
 
+
+        }
+
+        [HttpPost]
+
+        public ActionResult Insert([FromBody] Player player)
+        {
+            playerService.Insert(player);
+            return Ok();
 
         }
 

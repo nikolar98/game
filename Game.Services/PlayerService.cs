@@ -19,5 +19,10 @@ namespace Game.Services
 
         }
 
+        public void Insert(Player player) { 
+
+            playerRepository.Insert(player);
+        }
+
     }
 }
