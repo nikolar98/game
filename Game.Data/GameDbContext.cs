@@ -18,10 +18,6 @@ namespace Game.Data
         {
         }
 
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    optionsBuilder.UseSqlServer(@"Server=localhost\SQLEXPRESS;Database=GameDB;Trusted_Connection=True;MultipleActiveResultSets=true");
-        //}
 
     }
 }
